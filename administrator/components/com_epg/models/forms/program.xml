@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+              <field name="file" type="file"
+                
+            label="COM_EPG_FORM_LBL_PROGRAM_FILE"
+            description="COM_EPG_FORM_DESC_PROGRAM_FILE" 
+                
+                
+                
+            upload_directory="/epg/"
+            max_size="10" /> 
+
+       <field name="title" type="text"
+                
+            label="COM_EPG_FORM_LBL_PROGRAM_TITLE"
+            description="COM_EPG_FORM_DESC_PROGRAM_TITLE" 
+                
+                
+                
+            class="span6"
+            filter="safehtml" /> 
+
+       <field name="channel" type="text"
+                
+            label="COM_EPG_FORM_LBL_PROGRAM_CHANNEL"
+            description="COM_EPG_FORM_DESC_PROGRAM_CHANNEL" 
+                
+                
+                
+            class="span6"
+            filter="safehtml" /> 
+
+       <field name="channelid" type="text" size="40" class="span6"
+        
+            label="COM_EPG_FORM_LBL_PROGRAM_CHANNELID"
+            description="COM_EPG_FORM_DESC_PROGRAM_CHANNELID" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="starting" type="calendar"
+                
+            label="COM_EPG_FORM_LBL_PROGRAM_STARTING"
+            description="COM_EPG_FORM_DESC_PROGRAM_STARTING" 
+                
+                
+                
+            class="span6"
+            filter="safehtml" /> 
+
+       <field name="ending" type="calendar"
+                
+            label="COM_EPG_FORM_LBL_PROGRAM_ENDING"
+            description="COM_EPG_FORM_DESC_PROGRAM_ENDING" 
+                
+                
+                
+            class="span6"
+            filter="safehtml" /> 
+
+       <field name="langauge" type="list"
+                
+            label="COM_EPG_FORM_LBL_PROGRAM_LANGAUGE"
+            description="COM_EPG_FORM_DESC_PROGRAM_LANGAUGE" 
+                
+                
+                
+            class="span6">
+                <option value="English">English</option>
+                <option value="Swahili">Swahili</option>
+        </field> 
+
+       <field name="country" type="list"
+                
+            label="COM_EPG_FORM_LBL_PROGRAM_COUNTRY"
+            description="COM_EPG_FORM_DESC_PROGRAM_COUNTRY" 
+                 default="All" 
+                
+                
+            menu_published="0"
+            class="span6"
+            filter="raw"
+            multiple="true">
+                <option value="All">All</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Tanzania">Tanzania</option>
+                <option value="Uganda">Uganda</option>
+        </field> 
+
+       <field name="rating" type="text"
+                
+            label="COM_EPG_FORM_LBL_PROGRAM_RATING"
+            description="COM_EPG_FORM_DESC_PROGRAM_RATING" 
+                
+                
+                
+            class="span6"
+            filter="safehtml" /> 
+
+       <field name="actor" type="text"
+                
+            label="COM_EPG_FORM_LBL_PROGRAM_ACTOR"
+            description="COM_EPG_FORM_DESC_PROGRAM_ACTOR" 
+                
+                
+                
+            class="span6"
+            filter="safehtml" /> 
+
+       <field name="year" type="text"
+                
+            label="COM_EPG_FORM_LBL_PROGRAM_YEAR"
+            description="COM_EPG_FORM_DESC_PROGRAM_YEAR" 
+                
+                
+                
+            class="span6"
+            filter="safehtml" /> 
+
+       <field name="director" type="text"
+                
+            label="COM_EPG_FORM_LBL_PROGRAM_DIRECTOR"
+            description="COM_EPG_FORM_DESC_PROGRAM_DIRECTOR" 
+                
+                
+                
+            class="span6"
+            filter="safehtml" /> 
+
+       <field name="description" type="editor"
+                
+            label="COM_EPG_FORM_LBL_PROGRAM_DESCRIPTION"
+            description="COM_EPG_FORM_DESC_PROGRAM_DESCRIPTION" 
+                
+                
+                 /> 
+
+       <field name="id" type="text" default="0" label="COM_EPG_FORM_LBL_PROGRAM_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+       <field name="created_by" type="createdby" default="" 
+            label="COM_EPG_FORM_LBL_PROGRAM_CREATED_BY"
+            description="COM_EPG_FORM_DESC_PROGRAM_CREATED_BY"  /> 
+
+         <field
+        name="state"
+        type="list"
+        label="JSTATUS"
+        description="JFIELD_PUBLISHED_DESC"
+        class="inputbox"
+        size="1"
+        default="1">
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+    </field> 
+
+                        <field name="checked_out" type="hidden" filter="unset" />
+        <field name="checked_out_time" type="hidden" filter="unset" />
+
+	</fieldset>
+
+</form>

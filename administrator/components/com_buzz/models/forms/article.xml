@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+        <field name="title" type="text"
+            label="COM_BUZZ_FORM_LBL_ARTICLE_TITLE"
+            description="COM_BUZZ_FORM_DESC_ARTICLE_TITLE" 
+            required="true" 
+            class="span6"
+            filter="safehtml" /> 
+
+        <field name="subtitle" type="textarea"
+            label="Subtitle"
+            description="Buzz article subtitle" 
+            required="true" 
+            class="span6"
+            filter="safehtml" />
+
+       <field name="country" type="list"
+            label="COM_BUZZ_FORM_LBL_ARTICLE_COUNTRY"
+            description="COM_BUZZ_FORM_DESC_ARTICLE_COUNTRY" 
+            required="true" 
+            class="span6"
+            multiple="true">
+                <option value="Kenya">Kenya</option>
+                <option value="Tanzania">Tanzania</option>
+                <option value="Uganda">Uganda</option>
+                <option value="Malawi">Malawi</option>
+                <option value="All">All</option>
+        </field> 
+
+       <field name="langauge" type="list"
+                
+            label="COM_BUZZ_FORM_LBL_ARTICLE_LANGAUGE"
+            description="COM_BUZZ_FORM_DESC_ARTICLE_LANGAUGE" 
+                 default="All" 
+                
+                 required="true" 
+            class="span6">
+                <option value="All">All</option>
+                <option value="English">English</option>
+                <option value="Swahili">Swahili</option>
+        </field> 
+ 
+        <field name="show" type="sql" 
+            label="COM_BUZZ_FORM_LBL_ARTICLE_SHOW"
+            description="COM_BUZZ_FORM_DESC_ARTICLE_SHOW" 
+            class="span6"
+            query="SELECT id AS 'value', name AS 'show' FROM #__shows"
+            filter="safehtml" /> 
+
+       <field name="image" type="media"
+            label="COM_BUZZ_FORM_LBL_ARTICLE_IMAGE"
+            description="COM_BUZZ_FORM_DESC_ARTICLE_IMAGE" 
+            required="true" 
+            directory="/images/" /> 
+
+       <field name="story" type="editor"
+            label="COM_BUZZ_FORM_LBL_ARTICLE_STORY"
+            description="COM_BUZZ_FORM_DESC_ARTICLE_STORY" 
+            required="true" 
+            filter="safehtml" /> 
+
+       <field name="id" type="text" default="0" label="COM_BUZZ_FORM_LBL_ARTICLE_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+       <field name="created_by" type="createdby" default="" 
+            label="COM_BUZZ_FORM_LBL_ARTICLE_CREATED_BY"
+            description="COM_BUZZ_FORM_DESC_ARTICLE_CREATED_BY"  /> 
+
+         <field
+        name="state"
+        type="list"
+        label="JSTATUS"
+        description="JFIELD_PUBLISHED_DESC"
+        class="inputbox"
+        size="1"
+        default="1">
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+    </field> 
+
+                        <field name="checked_out" type="hidden" filter="unset" />
+        <field name="checked_out_time" type="hidden" filter="unset" />
+
+	</fieldset>
+
+</form>

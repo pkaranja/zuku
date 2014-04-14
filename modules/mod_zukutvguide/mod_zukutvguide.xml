@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="3.1"
+	client="site"
+	method="upgrade">
+	<name>ZUKU TV Guide Module</name>
+	<author>Ptah Karanja | AIM Group</author>
+	<creationDate>March 2014</creationDate>
+	<copyright>Copyright (C) 2005 - 2014. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>pkaranja@aimgroup.co.tz</authorEmail>
+	<authorUrl>www.aimgroup.co.tz</authorUrl>
+	<version>3.0.0</version>
+	<description>TV Guide for ZUKU website</description>
+	<files>
+		<filename module="mod_zukutvguide">mod_zukutvguide.php</filename>
+		<folder>tmpl</folder>
+		<filename>index.html</filename>
+		<filename>mod_zukutvguide.xml</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="featured_image"
+					type="media"
+					label="Featured TV Show [285px x 45px]"
+					description="Featured program image" />
+
+				<field 
+					name="featured_tvshow" 
+					type="sql" 
+					class="span4"
+					label="TV Show" 
+					query="SELECT id AS value, name AS featured_tvshow FROM #__shows" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

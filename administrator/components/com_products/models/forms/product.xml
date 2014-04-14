@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+              <field name="id" type="text" default="0" label="COM_PRODUCTS_FORM_LBL_PRODUCT_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+       <field name="name" type="text"
+                
+            label="COM_PRODUCTS_FORM_LBL_PRODUCT_NAME"
+            description="COM_PRODUCTS_FORM_DESC_PRODUCT_NAME" 
+                
+                
+                 required="true" 
+            class="span6"
+            filter="safehtml" /> 
+
+       <field name="image" type="media"
+                
+            label="COM_PRODUCTS_FORM_LBL_PRODUCT_IMAGE"
+            description="COM_PRODUCTS_FORM_DESC_PRODUCT_IMAGE" 
+                
+                
+                 required="true" 
+            directory="/images/products" /> 
+
+       <field name="country" type="list"
+                
+            label="COM_PRODUCTS_FORM_LBL_PRODUCT_COUNTRY"
+            description="COM_PRODUCTS_FORM_DESC_PRODUCT_COUNTRY" 
+            class="span6"
+            multiple="true">
+                <option value="Kenya">Kenya</option>
+                <option value="Tanzania">Tanzania</option>
+                <option value="Uganda">Uganda</option>
+                <option value="Malawi">Malawi</option>
+                <option value="All">All</option>
+
+        </field> 
+
+       <field name="language" type="list"
+                
+            label="COM_PRODUCTS_FORM_LBL_PRODUCT_LANGUAGE"
+            description="COM_PRODUCTS_FORM_DESC_PRODUCT_LANGUAGE" 
+                 default="All" 
+                
+                
+            menu_published="0"
+            class="span6"
+            filter="raw">
+                <option value="All">All</option>
+                <option value="English">English</option>
+                <option value="Swahili">Swahili</option>
+        </field> 
+
+ 
+		<field name="filter_language" type="list" onchange="this.form.submit();">
+			<option value="">COM_PRODUCTS_PRODUCTS_LANGUAGE_FILTER</option>
+			<option value="All">All</option>
+			<option value="English">English</option>
+			<option value="Swahili">Swahili</option>
+		</field> 
+
+       <field name="starting_price" type="text"
+                
+            label="COM_PRODUCTS_FORM_LBL_PRODUCT_STARTING_PRICE"
+            description="COM_PRODUCTS_FORM_DESC_PRODUCT_STARTING_PRICE" 
+                
+                
+                 required="true" 
+            menu_published="0"
+            class="span6"
+            filter="int" /> 
+
+       <field name="slogan" type="text"
+                
+            label="COM_PRODUCTS_FORM_LBL_PRODUCT_SLOGAN"
+            description="COM_PRODUCTS_FORM_DESC_PRODUCT_SLOGAN" 
+                
+                
+                
+            class="span6"
+            filter="safehtml" /> 
+
+       <field name="description" type="editor"   
+            label="COM_PRODUCTS_FORM_LBL_PRODUCT_DESCRIPTION"
+            description="COM_PRODUCTS_FORM_DESC_PRODUCT_DESCRIPTION" 
+            required="true" 
+            filter="safehtml" /> 
+
+       <field name="created_by" type="createdby" default="" 
+            label="COM_PRODUCTS_FORM_LBL_PRODUCT_CREATED_BY"
+            description="COM_PRODUCTS_FORM_DESC_PRODUCT_CREATED_BY"  /> 
+
+         <field
+        name="state"
+        type="list"
+        label="JSTATUS"
+        description="JFIELD_PUBLISHED_DESC"
+        class="inputbox"
+        size="1"
+        default="1">
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+    </field> 
+
+                        <field name="checked_out" type="hidden" filter="unset" />
+        <field name="checked_out_time" type="hidden" filter="unset" />
+
+	</fieldset>
+
+</form>

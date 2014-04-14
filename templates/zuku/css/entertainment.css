@@ -1,0 +1,246 @@
+.content-wrap{ padding-top:0 !important; }
+body{background:#8dc13e; }
+#entertainment { 
+    zoom: 1; 
+    position: relative; 
+    max-width:960px;
+    margin:0px auto;
+    z-index:90;
+    text-align:left; /* reset align=center */
+}
+#entertainment .ws_images ul{
+    position:relative;
+    width: 10000%; 
+    height:auto;
+    left:0;
+    list-style:none;
+    margin:0;
+    padding:0;
+    border-spacing:0;
+    overflow: visible;
+    /*table-layout:fixed;*/
+}
+#entertainment .ws_images ul li{
+    width:1%;
+    line-height:0; /*opera*/
+    float:left;
+    font-size:0;
+    padding:0 0 0 0 !important;
+    margin:0 0 0 0 !important;
+}
+
+#entertainment .ws_images{
+    position: relative;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+#entertainment .ws_images a{
+    width:100%;
+    display:block;
+    color:transparent;
+}
+#entertainment img{
+    max-width: none !important;
+}
+#entertainment .ws_images img{
+    width:100%;
+    border:none 0;
+    max-width: none;
+    padding:0;
+}
+#entertainment a{ 
+    text-decoration: none; 
+    outline: none; 
+    border: none; 
+}
+
+#entertainment  .ws_bullets { 
+    font-size: 0px; 
+    float: left;
+    position:absolute;
+    z-index:70;
+}
+#entertainment  .ws_bullets div{
+    position:relative;
+    float:left;
+}
+#entertainment  .wsl{
+    display:none;
+}
+#entertainment sound, 
+#entertainment object{
+    position:absolute;
+}#entertainment  .ws_bullets { 
+    padding: 10px; 
+}
+#entertainment .ws_bullets a { 
+    margin-left:6px;
+    width:13px;
+    height:13px;
+    float: left; 
+    text-indent: -4000px; 
+    position:relative;
+    color:transparent;
+}
+#entertainment .ws_bullets a.ws_selbull, #entertainment .ws_bullets a:hover{
+    background-position: 0 100%;
+}
+#entertainment a.ws_next, #entertainment a.ws_prev {
+    position:absolute;
+    display:none;
+    top:50%;
+    margin-top:-21px;
+    z-index:60;
+    height: 32px;
+    width: 32px;
+}
+#entertainment a.ws_next{
+    background-position: 100% 0;
+    right:5px;
+}
+#entertainment a.ws_prev {
+    left:5px;
+    background-position: 0 0; 
+}
+#entertainment a.ws_next:hover{
+    background-position: 100% 100%;
+}
+#entertainment a.ws_prev:hover {
+    background-position: 0 100%; 
+}
+* html #entertainment a.ws_next,* html #entertainment a.ws_prev{display:block}
+#entertainment:hover a.ws_next, #entertainment:hover a.ws_prev {display:block}
+/* bottom center */
+#entertainment  .ws_bullets {
+    bottom:-5px;
+    left:50%;
+}
+#entertainment  .ws_bullets div{
+    left:-50%;
+}
+/* separate */
+#entertainment .ws-title{
+    position: absolute;
+    display:block; 
+    top:40%;
+    left:0px;
+    margin-right:5px;
+    z-index: 50;
+    color: #FFFFFF; 
+    font-size: 25px;
+    line-height: 28px;
+
+}
+#entertainment .ws-title div,#entertainment .ws-title span{ 
+    display:inline-block; 
+    margin-top:10px;
+    padding:10px;
+    background:#3399FF;
+    font-weight: normal;    
+    border-radius:0;
+    opacity:0.8;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=90); 
+
+}
+#entertainment .ws-title div{ 
+    display:block;
+    margin-top:10px; 
+    font-size: 18px;
+    line-height: 21px;
+    background:#FFFFFF; 
+    color: #3399FF;
+}
+
+#entertainment  .ws_thumbs { 
+    font-size: 0px; 
+    position:absolute;
+    overflow:auto;
+    z-index:70;
+}
+#entertainment .ws_thumbs a { 
+    position:relative;
+    text-indent: -4000px; 
+    color:transparent;
+    opacity:0.85;
+}
+#entertainment .ws_thumbs a:hover{
+    opacity:1;
+}
+#entertainment .ws_thumbs a:hover img{
+    visibility:visible;
+}
+#entertainment  .ws_thumbs { 
+    bottom: 0px;
+    left: 0;
+    width:100%;
+    /*height:106px;*/
+}
+#entertainment  .ws_thumbs div{
+    position:relative;
+    height:100%;
+    letter-spacing:-4px;
+    width:2048px; 
+}
+#entertainment .ws_thumbs .ws_selthumb img{
+	width: 10%;
+}
+
+#entertainment .ws_thumbs  a img{
+    margin:3px;
+    text-indent:0;
+    width: 10%;
+    max-width:none;
+}
+
+#entertainment .ws_images ul{
+    animation: wsBasic 32s infinite;
+    -moz-animation: wsBasic 32s infinite;
+    -webkit-animation: wsBasic 32s infinite;
+}
+
+#entertainment .ws_bullets  a img{
+    text-indent:0;
+    display:block;
+    bottom:20px;
+    left:-120px;
+    visibility:hidden;
+    position:absolute;
+    border: 1px solid #FFFFFF;
+    max-width:none;
+}
+#entertainment .ws_bullets a:hover img{
+    visibility:visible;
+}
+
+#entertainment .ws_bulframe div div{
+    height:90px;
+    overflow:visible;
+    position:relative;
+}
+#entertainment .ws_bulframe div {
+    left:0;
+    overflow:hidden;
+    position:relative;
+    width:240px;
+    background-color:#FFFFFF;
+}
+#entertainment  .ws_bullets .ws_bulframe{
+    display:none;
+    bottom:20px;
+    overflow:visible;
+    position:absolute;
+    cursor:pointer;
+    border: 1px solid #FFFFFF;
+}
+#entertainment .ws_bulframe span{
+    display:block;
+    position:absolute;
+    bottom:-8px;
+    margin-left:-1px;
+    left:120px;
+    width:13px;
+    height:7px;
+}

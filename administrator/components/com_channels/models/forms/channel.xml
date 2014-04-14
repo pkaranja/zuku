@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+              <field name="id" type="text" default="0" label="COM_CHANNELS_FORM_LBL_CHANNEL_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+       <field name="name" type="text"
+                
+            label="COM_CHANNELS_FORM_LBL_CHANNEL_NAME"
+            description="COM_CHANNELS_FORM_DESC_CHANNEL_NAME" 
+                
+                
+                 required="true" 
+            class="span6"
+            filter="safehtml" /> 
+
+       <field name="icon" type="media"
+                
+            label="COM_CHANNELS_FORM_LBL_CHANNEL_ICON"
+            description="COM_CHANNELS_FORM_DESC_CHANNEL_ICON" 
+                
+                
+                 required="true" 
+            directory="/images/channels" /> 
+
+       <field name="channel_number" type="text"
+                
+            label="COM_CHANNELS_FORM_LBL_CHANNEL_CHANNEL_NUMBER"
+            description="COM_CHANNELS_FORM_DESC_CHANNEL_CHANNEL_NUMBER" 
+                
+                
+                 required="true" 
+            filter="safehtml" /> 
+
+       <field name="description" type="editor"
+                
+            label="COM_CHANNELS_FORM_LBL_CHANNEL_DESCRIPTION"
+            description="COM_CHANNELS_FORM_DESC_CHANNEL_DESCRIPTION" 
+                
+                
+                
+            filter="safehtml" /> 
+
+        <field name="category" type="list"
+            label="Category"
+            description="Channel Category" 
+            required="true" 
+            class="span6"
+            filter="safehtml"
+            multiple="true">
+                <option value="0">Select Category</option>
+                <option value="Asian">Asian</option>
+                <option value="Documentaries">Documentaries</option>
+                <option value="General Entertainment">General Entertainment</option>
+                <option value="Kids">Kids</option>
+                <option value="Local Channels">Local Channels</option>
+                <option value="Lifestyle & Culture">Lifestyle & Culture</option>
+                <option value="Movies">Movies</option>
+                <option value="Music">Music</option>
+                <option value="News & Commerce">News & Commerce</option>
+                <option value="Religion">Religion</option>
+                <option value="Special Interest">Special Interest</option>
+                <option value="Sports">Sports</option>
+        </field> 
+       
+        <field name="package" type="sql"
+            label="COM_CHANNELS_FORM_LBL_CHANNEL_PACKAGE"
+            description="COM_CHANNELS_FORM_DESC_CHANNEL_PACKAGE" 
+            required="true" 
+            class="span6"
+            filter="safehtml"
+            multiple="true"
+            query="SELECT id, packagename FROM #__packages" 
+            key_field="id" 
+            value_field="packagename">
+            <option value="0">Select Package</option>
+            <option value="All">All</option>
+        </field> 
+
+       <field name="created_by" type="createdby" default="" 
+            label="COM_CHANNELS_FORM_LBL_CHANNEL_CREATED_BY"
+            description="COM_CHANNELS_FORM_DESC_CHANNEL_CREATED_BY"  /> 
+
+         <field
+        name="state"
+        type="list"
+        label="JSTATUS"
+        description="JFIELD_PUBLISHED_DESC"
+        class="inputbox"
+        size="1"
+        default="1">
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+    </field> 
+
+                        <field name="checked_out" type="hidden" filter="unset" />
+        <field name="checked_out_time" type="hidden" filter="unset" />
+
+	</fieldset>
+
+</form>

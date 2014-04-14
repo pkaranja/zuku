@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="3.1"
+	client="site"
+	method="upgrade">
+	<name>ZUKU Customer communication Module</name>
+	<author>Ptah Karanja | AIM Group</author>
+	<creationDate>March 2014</creationDate>
+	<copyright>Copyright (C) 2005 - 2014. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>pkaranja@aimgroup.co.tz</authorEmail>
+	<authorUrl>www.aimgroup.co.tz</authorUrl>
+	<version>3.0.0</version>
+	<description>Customer communication for ZUKU website</description>
+	<files>
+		<filename module="mod_zukucallme">mod_zukucallme.php</filename>
+		<folder>tmpl</folder>
+		<filename>index.html</filename>
+		<filename>mod_zukucallme.xml</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="kenya_spacer" type="spacer" default="" label="Kenya Addresses" />
+					<field
+						name="kenya_email"
+						type="text"
+						label="Kenya Email Address"
+						description="Kenya Email address to send the customer details to" />
+
+					<field
+						name="kenya_cc"
+						type="text"
+						label="Kenya CC Email Address"
+						description="Kenya CC Email address to send the customer details to" />
+
+					<field
+						name="kenya_bcc"
+						type="text"
+						label="Kenya BCC Email Address"
+						description="Kenya BCC Email address to send the customer details to" />
+
+				<field name="tanzania_spacer" type="spacer" default="" label="Tanzania Addresses" />
+					<field
+						name="tanzania_email"
+						type="text"
+						label="Tanzania Email Address"
+						description="Tanzania Email address to send the customer details to" />
+
+					<field
+						name="tanzania_cc"
+						type="text"
+						label="CC Email Address"
+						description="Tanzania CC Email address to send the customer details to" />
+
+					<field
+						name="tanzania_bcc"
+						type="text"
+						label="Tanzania BCC Email Address"
+						description="Tanzania BCC Email address to send the customer details to" />
+
+				<field name="uganda_spacer" type="spacer" default="" label="Uganda Addresses" />
+					<field
+						name="uganda_email"
+						type="text"
+						label="Uganda Email Address"
+						description="Uganda Email address to send the customer details to" />
+
+					<field
+						name="uganda_cc"
+						type="text"
+						label="Uganda CC Email Address"
+						description="Uganda CC Email address to send the customer details to" />
+
+					<field
+						name="uganda_bcc"
+						type="text"
+						label="Uganda BCC Email Address"
+						description="Uganda BCC Email address to send the customer details to " />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

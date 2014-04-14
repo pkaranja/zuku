@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="3.1"
+	client="site"
+	method="upgrade">
+	<name>Zuku Youtube video Embed</name>
+	<author>Ptah Karanja | AIM Group</author>
+	<creationDate>March 2014</creationDate>
+	<copyright>Copyright (C) 2005 - 2014. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>pkaranja@aimgroup.co.tz</authorEmail>
+	<authorUrl>www.aimgroup.co.tz</authorUrl>
+	<version>3.0.0</version>
+	<description>Zuku Youtube video Embedder</description>
+	<files>
+		<filename module="mod_zukunow">mod_zukuvideo.php</filename>
+		<folder>tmpl</folder>
+		<filename>index.html</filename>
+		<filename>mod_zukuvideo.xml</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+					<field
+						name="youtubeid"
+						type="text"
+						label="Youtube Video ID"
+						description="Youtube video ID" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

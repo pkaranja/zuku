@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+              <field name="title" type="text"
+                
+            label="COM_ENTERTAINMENT_FORM_LBL_HIGHLIGHT_TITLE"
+            description="COM_ENTERTAINMENT_FORM_DESC_HIGHLIGHT_TITLE" 
+                
+                
+                 required="true" 
+            class="span6"
+            filter="safehtml" /> 
+
+       <field name="featured" type="list"
+                
+            label="COM_ENTERTAINMENT_FORM_LBL_HIGHLIGHT_FEATURED"
+            description="COM_ENTERTAINMENT_FORM_DESC_HIGHLIGHT_FEATURED" 
+                 default="0" 
+                
+                
+            class="span6">
+                <option value="0">Not featured</option>
+                <option value="1">Featured</option>
+        </field> 
+
+       <field name="youtube" type="text"
+                
+            label="COM_ENTERTAINMENT_FORM_LBL_HIGHLIGHT_YOUTUBE"
+            description="COM_ENTERTAINMENT_FORM_DESC_HIGHLIGHT_YOUTUBE" 
+                 default="http://www.youtube.com/" 
+                
+                
+            class="span6"
+            filter="url" /> 
+
+       <field name="facebook" type="text"
+                
+            label="COM_ENTERTAINMENT_FORM_LBL_HIGHLIGHT_FACEBOOK"
+            description="COM_ENTERTAINMENT_FORM_DESC_HIGHLIGHT_FACEBOOK" 
+                 default="http://www.facebook.com/" 
+                
+                
+            class="span6"
+            filter="url" /> 
+
+       <field name="twitter" type="text"
+                
+            label="COM_ENTERTAINMENT_FORM_LBL_HIGHLIGHT_TWITTER"
+            description="COM_ENTERTAINMENT_FORM_DESC_HIGHLIGHT_TWITTER" 
+                 default="http://www.twitter.com/" 
+                
+                
+            class="span6"
+            filter="url" /> 
+
+       <field name="country" type="list"
+            label="COM_ENTERTAINMENT_FORM_LBL_HIGHLIGHT_COUNTRY"
+            description="COM_ENTERTAINMENT_FORM_DESC_HIGHLIGHT_COUNTRY" 
+            default="All"   
+            required="true" 
+            class="span6"
+            multiple="true">
+                <option value="All">All</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Uganda">Uganda</option>
+                <option value="Tanzania">Tanzania</option>
+        </field> 
+
+       <field name="language" type="list"
+                
+            label="COM_ENTERTAINMENT_FORM_LBL_HIGHLIGHT_LANGUAGE"
+            description="COM_ENTERTAINMENT_FORM_DESC_HIGHLIGHT_LANGUAGE" 
+            default="All"   
+            required="true" 
+            menu_published="0"
+            class="span6"
+            filter="raw">
+                <option value="All">All</option>
+                <option value="English">English</option>
+                <option value="Swahili">Swahili</option>
+        </field> 
+
+       <field name="thumbnail" type="media"
+                
+            label="COM_ENTERTAINMENT_FORM_LBL_HIGHLIGHT_THUMBNAIL"
+            description="COM_ENTERTAINMENT_FORM_DESC_HIGHLIGHT_THUMBNAIL" 
+                
+                
+                 required="true" 
+            directory="/images/" /> 
+
+       <field name="image" type="media"
+                
+            label="COM_ENTERTAINMENT_FORM_LBL_HIGHLIGHT_IMAGE"
+            description="COM_ENTERTAINMENT_FORM_DESC_HIGHLIGHT_IMAGE" 
+                
+                
+                 required="true" 
+            directory="/images/" /> 
+
+       <field name="article" type="editor"
+                
+            label="COM_ENTERTAINMENT_FORM_LBL_HIGHLIGHT_ARTICLE"
+            description="COM_ENTERTAINMENT_FORM_DESC_HIGHLIGHT_ARTICLE" 
+                
+                
+                 required="true" 
+            filter="safehtml" /> 
+
+       <field name="id" type="text" default="0" label="COM_ENTERTAINMENT_FORM_LBL_HIGHLIGHT_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+       <field name="created_by" type="createdby" default="" 
+            label="COM_ENTERTAINMENT_FORM_LBL_HIGHLIGHT_CREATED_BY"
+            description="COM_ENTERTAINMENT_FORM_DESC_HIGHLIGHT_CREATED_BY"  /> 
+
+         <field
+        name="state"
+        type="list"
+        label="JSTATUS"
+        description="JFIELD_PUBLISHED_DESC"
+        class="inputbox"
+        size="1"
+        default="1">
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+    </field> 
+
+                        <field name="checked_out" type="hidden" filter="unset" />
+        <field name="checked_out_time" type="hidden" filter="unset" />
+
+	</fieldset>
+
+</form>

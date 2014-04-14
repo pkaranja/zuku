@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="3.1"
+	client="site"
+	method="upgrade">
+	<name>Zuku Dont Miss Shows</name>
+	<author>Ptah Karanja | AIM Group</author>
+	<creationDate>March 2014</creationDate>
+	<copyright>Copyright (C) 2005 - 2014. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>pkaranja@aimgroup.co.tz</authorEmail>
+	<authorUrl>www.aimgroup.co.tz</authorUrl>
+	<version>3.0.0</version>
+	<description>Shows to highlight on the sidebar</description>
+	<files>
+		<filename module="mod_zukudontmiss">mod_zukudontmiss.php</filename>
+		<folder>tmpl</folder>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_zukudontmiss.xml</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field 
+					name="featured_show" 
+					type="sql" 
+					class="span4"
+					label="Featured Show" 
+					query="SELECT id AS value, name AS featured_show FROM #__shows" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

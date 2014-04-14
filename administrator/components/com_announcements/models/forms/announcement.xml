@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+              <field name="id" type="text" default="0" label="COM_ANNOUNCEMENTS_FORM_LBL_ANNOUNCEMENT_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+       <field name="created_by" type="createdby" default="" 
+            label="COM_ANNOUNCEMENTS_FORM_LBL_ANNOUNCEMENT_CREATED_BY"
+            description="COM_ANNOUNCEMENTS_FORM_DESC_ANNOUNCEMENT_CREATED_BY"  /> 
+
+       <field name="title" type="text"
+                
+            label="COM_ANNOUNCEMENTS_FORM_LBL_ANNOUNCEMENT_TITLE"
+            description="COM_ANNOUNCEMENTS_FORM_DESC_ANNOUNCEMENT_TITLE" 
+                
+                
+                 required="true" 
+            class="span6"
+            filter="safehtml" /> 
+
+       <field name="country" type="list"   
+            label="COM_ANNOUNCEMENTS_FORM_LBL_ANNOUNCEMENT_COUNTRY"
+            description="COM_ANNOUNCEMENTS_FORM_DESC_ANNOUNCEMENT_COUNTRY" 
+            required="true" 
+            class="span6"
+            multiple="true">
+                <option value="Kenya">Kenya</option>
+                <option value="Tanzania">Tanzania</option>
+                <option value="Uganda">Uganda</option>
+                <option value="Malawi">Malawi</option>
+                <option value="All">All</option>
+        </field> 
+
+       <field name="langauge" type="list"
+                
+            label="COM_ANNOUNCEMENTS_FORM_LBL_ANNOUNCEMENT_LANGAUGE"
+            description="COM_ANNOUNCEMENTS_FORM_DESC_ANNOUNCEMENT_LANGAUGE" 
+                 default="All" 
+                
+                 required="true" 
+            menu_published="0"
+            class="span6"
+            filter="raw"
+            multiple="false">
+                <option value="All">All</option>
+                <option value="English">English</option>
+                <option value="Swahili">Swahili</option>
+        </field> 
+         <field name="image" type="media"
+            label="Image"
+            description="Image to be associated with the announcement" 
+            class="span6"
+            required="true" 
+            directory="/images/" /> 
+            
+       <field name="startdate" type="calendar"
+                
+            label="COM_ANNOUNCEMENTS_FORM_LBL_ANNOUNCEMENT_STARTDATE"
+            description="COM_ANNOUNCEMENTS_FORM_DESC_ANNOUNCEMENT_STARTDATE" 
+                
+                
+                 required="true" 
+            class="span6" /> 
+
+       <field name="enddate" type="calendar"
+                
+            label="COM_ANNOUNCEMENTS_FORM_LBL_ANNOUNCEMENT_ENDDATE"
+            description="COM_ANNOUNCEMENTS_FORM_DESC_ANNOUNCEMENT_ENDDATE" 
+                
+                
+                 required="true" 
+            menu_published="0"
+            class="span6"
+            filter="raw" /> 
+
+       <field name="announcement" type="editor"
+                
+            label="COM_ANNOUNCEMENTS_FORM_LBL_ANNOUNCEMENT_ANNOUNCEMENT"
+            description="COM_ANNOUNCEMENTS_FORM_DESC_ANNOUNCEMENT_ANNOUNCEMENT" 
+                
+                
+                 required="true" 
+            filter="safehtml" /> 
+
+         <field
+        name="state"
+        type="list"
+        label="JSTATUS"
+        description="JFIELD_PUBLISHED_DESC"
+        class="inputbox"
+        size="1"
+        default="1">
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+    </field> 
+
+                        <field name="checked_out" type="hidden" filter="unset" />
+        <field name="checked_out_time" type="hidden" filter="unset" />
+
+	</fieldset>
+
+</form>

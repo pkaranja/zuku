@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+              <field name="id" type="text" default="0" label="COM_PACKAGES_FORM_LBL_PACKAGE_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+       <field name="packagename" type="text"
+                
+            label="COM_PACKAGES_FORM_LBL_PACKAGE_PACKAGENAME"
+            description="COM_PACKAGES_FORM_DESC_PACKAGE_PACKAGENAME" 
+                
+                
+                 required="true" 
+            class="span6"
+            filter="safehtml" /> 
+
+       <field name="icon" type="file"
+                
+            label="COM_PACKAGES_FORM_LBL_PACKAGE_ICON"
+            description="COM_PACKAGES_FORM_DESC_PACKAGE_ICON" 
+                
+                
+                
+            upload_directory="images/packages/"
+            accept="image/jpeg,image/png"
+            max_size="10" /> 
+
+       <field name="price" type="text"
+                
+            label="COM_PACKAGES_FORM_LBL_PACKAGE_PRICE"
+            description="COM_PACKAGES_FORM_DESC_PACKAGE_PRICE" 
+                
+                
+                 required="true" 
+            class="span6"
+            filter="int" /> 
+
+       <field name="description" type="editor"
+                
+            label="COM_PACKAGES_FORM_LBL_PACKAGE_DESCRIPTION"
+            description="COM_PACKAGES_FORM_DESC_PACKAGE_DESCRIPTION" 
+                
+                
+                 required="true" 
+            filter="safehtml" /> 
+
+       <field name="offer" type="text"
+                
+            label="COM_PACKAGES_FORM_LBL_PACKAGE_OFFER"
+            description="COM_PACKAGES_FORM_DESC_PACKAGE_OFFER" 
+                
+                
+                
+            class="span6"
+            filter="safehtml" /> 
+
+       <field name="product" type="sql"
+            label="COM_PACKAGES_FORM_LBL_PACKAGE_PRODUCT"
+            description="COM_PACKAGES_FORM_DESC_PACKAGE_PRODUCT" 
+            required="true" 
+            class="span6"
+            filter="safehtml"
+            query="SELECT id, name FROM #__products" 
+            key_field="id" 
+            value_field="name">
+            <option value="0">Select Product</option>
+        </field> 
+
+       <field name="created_by" type="createdby" default="" 
+            label="COM_PACKAGES_FORM_LBL_PACKAGE_CREATED_BY"
+            description="COM_PACKAGES_FORM_DESC_PACKAGE_CREATED_BY"  /> 
+
+         <field
+        name="state"
+        type="list"
+        label="JSTATUS"
+        description="JFIELD_PUBLISHED_DESC"
+        class="inputbox"
+        size="1"
+        default="1">
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+    </field> 
+
+                        <field name="checked_out" type="hidden" filter="unset" />
+        <field name="checked_out_time" type="hidden" filter="unset" />
+
+	</fieldset>
+
+</form>

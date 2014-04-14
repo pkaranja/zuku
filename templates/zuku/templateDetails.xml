@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.1" type="template" client="site">
+	<name>ZUKU</name>
+	<version>1.0</version>
+	<creationDate>4/30/2012</creationDate>
+	<author>Ptah Karanja</author>
+	<authorEmail>pittskay@gmail.com</authorEmail>
+	<copyright>Copyright (C) 2005 - 2013 Open Source Matters, Inc. All rights reserved.</copyright>
+	<description>Zuku website look and feel</description>
+	<files>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.php</filename>
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>img</folder>
+		<folder>js</folder>
+	</files>
+	<positions>
+		<position>top</position>
+		<position>main-menu</position>
+		<position>mobile-menu</position>
+		<position>search</position>
+		<position>hero</position>
+		<position>selfhelp-desktop</position>
+		<position>selfhelp-mobile</position>
+		<position>products</position>
+		<position>right</position>
+		<position>bottom-left</position>
+		<position>bottom-middle</position>
+		<position>bottom-right</position>
+		<position>whats-hot</position>
+		<position>footer-menu-full-width</position>
+		<position>footer-menu1</position>
+		<position>footer-menu2</position>
+		<position>footer-menu3</position>
+		<position>footer-menu4</position>
+		<position>footer</position>
+		<position>copyright</position>
+	</positions>
+</extension>

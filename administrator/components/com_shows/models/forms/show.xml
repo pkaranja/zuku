@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+        <field name="id" type="text" default="0" label="COM_SHOWS_FORM_LBL_SHOW_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+       <field name="name" type="text"
+            label="COM_SHOWS_FORM_LBL_SHOW_NAME"
+            description="COM_SHOWS_FORM_DESC_SHOW_NAME" 
+            required="true" 
+            menu_published="0"
+            class="span6"
+            filter="safehtml" /> 
+
+       <field name="image" type="media"
+            label="COM_SHOWS_FORM_LBL_SHOW_IMAGE"
+            description="COM_SHOWS_FORM_DESC_SHOW_IMAGE" 
+            class="span6"
+            required="true" 
+            directory="/images/shows" /> 
+
+       <field name="start_time" type="text" size="40" class="inputbox span6"
+            label="COM_SHOWS_FORM_LBL_SHOW_START_TIME"
+            description="COM_SHOWS_FORM_DESC_SHOW_START_TIME" 
+         default="0000-00-00 00:00:00" 
+        
+         required="true" 
+        filter="safehtml" /> 
+
+       <field name="end_time" type="text" size="40" class="inputbox span6"
+            
+            label="COM_SHOWS_FORM_LBL_SHOW_END_TIME"
+            description="COM_SHOWS_FORM_DESC_SHOW_END_TIME" 
+         default="0000-00-00 00:00:00" 
+        
+         required="true" 
+        filter="safehtml" /> 
+
+       <field name="days" type="list"   
+            label="COM_SHOWS_FORM_LBL_SHOW_DAYS"
+            description="COM_SHOWS_FORM_DESC_SHOW_DAYS"
+            default="All" 
+            required="true" 
+            class="span6"
+            multiple="true">
+                <option value="All">All</option>
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+                <option value="Sunday">Sunday</option>
+        </field> 
+        <field
+            name="featured"
+            type="list"
+            label="COM_SHOWS_FORM_LBL_SHOW_FEATURED"
+            description="COM_SHOWS_FORM_DESC_SHOW_FEATURED"
+            class="inputbox span6"
+            size="1"
+            default="0">
+                <option value="0">Not Featured</option>
+                <option value="1">Featured</option>
+        </field>
+
+       <field name="channel" type="sql" 
+            label="COM_SHOWS_FORM_LBL_SHOW_CHANNEL"
+            description="COM_SHOWS_FORM_DESC_SHOW_CHANNEL" 
+            required="true" 
+            class="span6"
+            query="SELECT id AS value, name AS channel FROM #__channels"
+            filter="safehtml" /> 
+
+       <field name="created_by" type="createdby" default="" 
+            label="COM_SHOWS_FORM_LBL_SHOW_CREATED_BY"
+            description="COM_SHOWS_FORM_DESC_SHOW_CREATED_BY"  /> 
+
+        <field
+            name="state"
+            type="list"
+            label="JSTATUS"
+            description="JFIELD_PUBLISHED_DESC"
+            class="inputbox"
+            size="1"
+            default="1">
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+    </field> 
+
+                        <field name="checked_out" type="hidden" filter="unset" />
+        <field name="checked_out_time" type="hidden" filter="unset" />
+
+	</fieldset>
+
+</form>

@@ -1,0 +1,685 @@
+/* Responsive styles */
+@media screen and (max-width:975px){
+	.packageHolder{
+		max-width:630px;
+	}
+	
+	.package,.homeCategories{
+		max-width:309px;
+	}
+}
+
+@media screen and (max-width:960px){
+	.contentHolder{
+		max-width:800px
+	}
+	
+	#sliderAdditional{
+		top:20px;
+	}
+	
+	.package{
+		max-width:255px;
+	}
+	
+	.tzPackage{
+		max-width:none;
+	}
+
+	.packageHolder{
+		max-width:530px;
+	}
+	
+	.bottomPos{
+		bottom:30px;
+	}
+	
+	.bottomPos span{
+		font-size:12px;
+	}
+	
+	#announcementHolder p{
+		width:40%;
+		font-size:12px;
+	}
+	
+	.homeCategories{
+		max-width:258px;
+	}
+	
+	.brief{
+		font-size:12px;
+	}
+	
+	#zukuBuzzBrief{
+		width:55%;
+		font-size:12px;
+		top:3px;
+	}
+	
+	#zukuBuzzBrief .smallerHeading{
+		font-size:14px;
+	}
+
+	#zukuBuzzBrief p{
+		font-size:12px;
+	}
+
+	.bottomLink{
+		max-width:125px;
+	}
+	
+	.bottomLink p{
+		font-size:12px;
+	}
+	
+	#zukuBuzzTopStory{
+		height:411px;
+	}
+	.zukuBuzzBrief{
+		height:200px;
+	}
+	
+	.zukuBuzzBrief .innerHeading{
+		font-size:21px;
+	}
+	
+	.packageView{
+		height:460px;
+	}
+	
+	.packageSelectionButton{
+		width:230px;
+		margin-left:0;
+	}
+	
+	.packageChanels,.packageInfoEncloser{
+		height:460px;
+	}
+}
+
+@media screen and (max-width:810px){
+	.packageHolder{
+		max-width:520px;
+	}
+	
+	.package{
+		max-width:250px;
+	}
+
+	.tzPackage{
+		max-width:none;
+	}
+	
+	.homeCategories{
+		max-width:255px;
+	}
+	
+	.bottomLink{
+		max-width:123px;
+	}
+}
+
+@media screen and (max-width:800px){
+	.contentHolder{
+		max-width:600px;
+	}
+	
+	#mainContent{
+		top:99px;
+	}
+	
+	#bottomGreen{
+		margin-top:150px;
+	}
+	
+	/*SLIDER HOME*/
+	.camera_caption {
+		right: 0;
+		top:50.5%;
+		height:auto;
+		display: block;
+		position: absolute;
+		width: 100%;
+	}
+	.camera_caption > div {
+		padding: 5px 5px;
+		width:100%;
+		height:auto;
+		min-height: 115px;
+		background:none;
+		background-color:rgba(0,0,0,0.9);
+	}
+	
+	.camera_caption h2{
+		font-size:14px;
+		font-weight:bold;
+	}
+
+	.camera_caption .content,.camera_caption span{
+		width:90%;
+		font-size:12px;
+	}
+	
+	.camera_caption span{
+		width:auto;
+		margin-right:10%;
+	}
+	
+	.camera_next{
+		top:70%;
+	}
+	
+	#sliderAdditional,#sliderAdditional *{
+		display:none !important; 
+	}
+	
+	.sliderAdditionalOptions{
+		position:relative;
+		width:90%;
+		height:115px;
+		margin:auto;
+		margin-bottom:3px;
+		clear:both;
+		max-width:159px;
+		background-color:rgba(0,0,0,0.9);
+	}
+	
+	#sliderAdditionalMobile{
+		display:block !important;
+	}
+	
+	#sliderAdditionalMobile img{
+		width:95%;
+		max-width:140px;
+	}
+	
+	/**/
+	
+	#homePackagesFull{
+		margin-top:-115px;
+	}
+	
+	.rtl{
+		float:left;
+	}
+	
+	#formHome{
+		float:none;
+		clear:both;
+		margin:auto;
+		margin-top:5px;	
+		height:370px;
+		max-width:none;
+	}
+	
+	#moreInfoHome{
+		width:90%;
+		margin:auto;
+		float:none;
+		border-radius:10px;
+		margin-bottom:5px;
+	}
+	.infoHome{
+		padding-bottom:20px;
+	}
+	
+	#selections{
+		width:62%;
+	}
+	
+	#tvGiudeHomeEncloser,#announcementsHome{
+		width:45%;
+		margin:2%;
+		padding-bottom:5px;
+		clear:none;
+		float:left;
+	}
+	
+	.packageHolder{
+		max-width:580px
+	}
+	
+	.package,.homeCategories{
+		max-width:280px;
+	}
+	
+	.package .button{
+		width:98.5%;
+	}
+
+	.tzPackage{
+		max-width:none;
+	}
+	
+	.tzPackage .button{
+		width:50%;
+		float:right;
+		margin-right:0;
+	}
+	
+	.homeCategories:last-child{
+		max-width:350px;
+		float:none;
+		margin:auto;
+		clear:both;
+	}
+		
+	.bottomLink{
+		width:30%;
+		max-width:none;
+		margin:0 !important;
+		margin-bottom:5px !important;
+		margin-left:2.5% !important;
+	}
+	
+	#ltLnk{
+		margin-left:0;
+	}
+	
+	#ftLnk,#ltLnk{
+		border-radius:0;
+	}
+	
+	#mobileMenuToggleAndSearch{
+		display:inline;
+	}
+	
+	#searchAndMenu{
+		width:30%;
+	}
+	
+	#languageToggle{
+		width:auto;
+	}
+
+	.lang{
+		float:left;
+		clear:both;
+		margin:3px;
+	}
+	
+	.lang:last-child{
+		margin-top:0;
+	}
+	
+	
+	#desktopSearch,#desktopMenu{
+		display:none;
+	}
+	
+	#topBar .contentHolder,#menuAndLogo .contentHolder{
+		max-width:none;
+	}
+	
+	.dontMiss{
+		width:100%;
+	}
+	
+	.dontMissContent{
+		width:31%;
+		float:left;
+		clear:none;
+		margin:1%;
+		margin-bottom:0px;
+	}
+	
+	.dontMissContent .whiteText{
+		font-size:14px;
+	}
+	
+	.mainContentHolder{
+		width:100%;
+	}
+	
+	.zukuBuzzBrief{
+		margin:0.5%;
+		margin-bottom:10px;;
+	}
+	
+		
+	.zukuBuzzBriefContent .darkText{
+		font-size:14px;
+	}
+	
+	.mainContent,.headingAndPicZukuBuzz {
+		width:100%;
+		float:none;
+		margin:auto;
+		margin-top:10px;
+	}
+	
+	.headingAndPicZukuBuzz h2{
+		font-size:20px;
+	}
+	
+	.subTitle{
+		font-size:18px;
+	}
+	
+	.packageView{
+		height:400px;
+	}
+	
+	.packageChanels,.packageInfoEncloser{
+		height:390px;
+	}
+
+	.packageNameAndIcon img{
+		display:none;
+	}
+	
+	.packageNameAndIcon{
+		margin-top:12%;
+	}
+}
+
+@media screen and (max-width:590px){	
+	#menuAndLogo{
+		min-height:70px;
+	}
+
+	
+
+	.notSmallTablet{
+		display:none;
+	}
+
+	#topUserOption{
+		max-width:none;
+		width:90px;
+		left:0;
+	}
+	#registerTop,#countryToggle{
+		display:none;
+	}
+	
+	#topLogo{
+		width:30%;
+		min-width:140px;
+		height:auto;
+		margin-top:1%;
+	}
+	
+	#mobileMenuToggleAndSearch{
+		margin-top:20%;
+	}
+	
+	#mobileMenuToggleAndSearch img{
+		margin-top:0;
+	}
+	
+	#announcementsHome{
+		width:46%;
+	}
+	
+	.packageHolder{
+		height:auto;
+	}
+	
+	.packageHolder .package{
+		width:95%;
+		max-width:none;
+		margin:auto;
+		float:none;
+		clear:both;
+		/*border:solid 1px red;
+		background:none;
+		background-image:url('../images/site-images/tz-package.png') no-repeat;*/
+	}
+	
+	.packageInfo{
+		background:url('../images/site-images/tz-package.png') no-repeat;
+		height:310px;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+  }
+  
+  .bottomPos{
+	bottom:0;
+  }
+  
+  .package .button{
+		width:99.7%;
+  }
+  
+  .homeCategories{
+	width:95%;
+	float:none;
+	margin:auto;
+	max-width:none;
+  }
+  
+   .homeCategories img{
+		width:50%;
+   }
+
+   .homeCategories .content{
+		width:48%;
+	}
+	
+	.homeCategories:last-child{
+		max-width:none;
+	}
+	
+	.zukuBuzzBrief,#zukuBuzzTopStory{
+		height:182px;
+	}
+	
+	.zukuBuzzBrief .innerHeading{
+		font-size:16px;
+	}
+	
+	#zukuBuzzTopStory{
+		width:99%;
+		height:auto;
+		padding-bottom:10px;
+	}
+	
+	.mainContent,.headingAndPicZukuBuzz{
+		width:95%;
+	}
+	
+	.mobileChanelList{
+		display:block;
+	}
+	
+	.packageChanels,.packageAdvertImage{
+		display:none;
+	}
+	
+	.packageInfoEncloser{
+		height:auto;
+		width:99%;
+	}
+	
+	.packageView{
+		height:260px;
+	}
+	
+	.longText{
+		display:none;
+	}
+	
+	.shortText{
+		display:block;
+	}
+	
+	.packageSelectionButton{
+		width:90px;
+	}
+}
+
+@media screen and (max-width:535px){	
+	#mainContent{
+		top:95px;
+	}
+	
+	.priceHolder{
+		font-size:25px;
+	}
+}
+
+@media screen and (max-width:440px){
+	.camera_caption{
+		top:53%;
+	}
+
+	.camera_caption span{
+		margin-top:-10px;;
+	}
+	
+	#sliderAdditionalMobile{
+		top:-114px;
+		height:115px;
+	}
+	
+}
+
+@media screen and (max-width:430px){	
+	#moreInfoHome{
+		width:95%;
+	}
+	
+	.bottomPos .darkText,{
+		visibility:hidden;
+	}
+	
+	.packageInfo .insideInfo,.tzPackage .insideInfo{
+		display:none;
+	}
+	
+	.package .bottomPos .darkText{
+		visibility:hidden;
+	}
+		
+	.sliderAdditionalOptions{
+		height:auto;
+	}
+	
+	#tvGiudeHomeEncloser,#announcementsHome{
+		float:left;
+		margin:auto;
+		clear:both;
+		margin-left:2.5%;
+		margin-bottom:5px;
+		width:95%;
+	}
+	
+	#bottomMenu{
+		padding-top:20px;
+	}
+	
+	
+	#moreInfoHome .formField, #moreInfoHome .formButton{
+		width:87%;
+	}	
+	
+	#moreInfoHome .formButton{
+		width:50%;
+		float:left;
+		margin-left:45%;
+	}
+	
+	#quickGuide{
+		border-radius:0;
+	}
+	
+	.homeCategories .grey,.homeCategories{
+		height:auto;
+	}
+	
+	.homeCategories img,.homeCategories .content,.brief{
+		width:100%;
+		height:auto;
+	}
+	
+	.brief{
+		margin-top:1%;
+	}
+	
+	.moreLink{
+		position:relative;
+		bottom:0;
+		float:right;
+		margin:2%;
+		font-size:12px;
+	}
+	
+	.bottomLink,.footerQuickLinks{
+		width:95%;
+		float:none;
+		clear:both;
+		margin:auto;
+		margin-bottom:3px;
+	}
+	
+	.footerQuickLinks{
+		text-align:center;
+	}
+	
+	#zukuBuzzInfo{
+		position:absolute;
+		bottom:0;
+		height:75px;
+		background-color:rgba(255,255,255,0.7);
+	}
+	
+	.zukuBuzzBrief{
+		width:99%;
+		height:auto;
+	}
+
+	.zukuBuzzBrief img{
+		height:100%;
+	}
+}
+
+@media screen and (max-width:360px){
+	.camera_caption{
+		top:58%;
+	}
+	
+	#sliderAdditionalMobile{
+		top:-90px;
+		height:90px;
+	}
+	
+	#formHome{
+		margin-top:30px;
+	}
+		
+	#zukuBuzzBrief{
+		top:-1px;
+		width:60%;
+	}
+
+}
+
+@media screen and (max-width:330px){		
+	.camera_caption{
+		top:55%;
+	}
+
+	#highlight-2,#now-2,#now-3,#now-4{
+		display:none;
+	}
+	
+	.homeCategories{
+		margin-bottom:30px;
+	}
+	
+	#onTV img{
+		width:100%;
+		height:auto;
+	}
+	
+	#nextHighlight,#nextNow{
+		visibility:visible;
+	}
+	.smallerHeading{
+		font-size:20px;
+	}
+}
